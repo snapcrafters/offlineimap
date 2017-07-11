@@ -1,10 +1,10 @@
 <h1 align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/OfflineIMAP_logo.png" alt="OfflineIMAP">
   <br />
-  [OfflineIMAP]
+  OfflineIMAP
 </h1>
 
-<p align="center"><b>This is the snap for [OfflineIMAP]</b>, <i>"Read/sync your IMAP mailboxes "</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
+<p align="center"><b>This is the snap for OfflineIMAP</b>, <i>"Read/sync your IMAP mailboxes "</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
 distributions.</p>
 
 <!-- Uncomment and modify this when you are provided a build status badge
