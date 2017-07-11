@@ -63,7 +63,7 @@ If you have any questions, [post in the Snapcraft forum](https://forum.snapcraft
 
 ## The Snapcrafters
 
-| [![Alan Pope](http://gravatar.com/avatar/bc0bced65e963eb5c3a16cab8b004431/?s=128)](https://github.com/popey/) |
+| [![Alan Pope](http://gravatar.com/avatar/4a4276d8a98ff4ff31e1f1c1d7413980/?s=128)](https://github.com/popey/) |
 | :---: |
 | [Alan Pope](https://github.com/popey/) |
 
