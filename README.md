@@ -65,9 +65,9 @@ If you have any questions, [post in the Snapcraft forum](https://forum.snapcraft
 
 ## The Snapcrafters
 
-| [![Your Name](http://gravatar.com/avatar/bc0bced65e963eb5c3a16cab8b004431/?s=128)](https://github.com/yourname/) |
+| [![Alan Pope](http://gravatar.com/avatar/bc0bced65e963eb5c3a16cab8b004431/?s=128)](https://github.com/popey/) |
 | :---: |
-| [Your Name](https://github.com/yourname/) |
+| [Alan Pope](https://github.com/popey/) |
 
 <!-- Uncomment and modify this when you have upstream contacts
 ## Upstream
