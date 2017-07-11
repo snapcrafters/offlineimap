@@ -7,11 +7,9 @@
 <p align="center"><b>This is the snap for OfflineIMAP</b>, <i>"Read/sync your IMAP mailboxes "</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
 distributions.</p>
 
-<!-- Uncomment and modify this when you are provided a build status badge
 <p align="center">
-<a href="https://build.snapcraft.io/user/snapcrafters/fork-and-rename-me"><img src="https://build.snapcraft.io/badge/snapcrafters/fork-and-rename-me.svg" alt="Snap Status"></a>
+<a href="https://build.snapcraft.io/user/snapcrafters/offlineimap"><img src="https://build.snapcraft.io/badge/snapcrafters/offlineimap.svg" alt="Snap Status"></a>
 </p>
--->
 
 ## Install
 
@@ -46,8 +44,8 @@ upstream so [Project] can authoritatively publish future releases.
   - [x] Publish the confined snap in the Snap store beta channel
   - [x] Update the install instructions in this `README.md`
   - [ ] Post a call for testing on the [Snapcraft Forum](https://forum.snapcraft.io) - [link]()
-  - [ ] Request your GitHub repository is forked to the Snapcrafters organisation and configured for automated builds
-  - [ ] Add the provided Snapcraft build badge to this `README.md`
+  - [x] Request your GitHub repository is forked to the Snapcrafters organisation and configured for automated builds
+  - [x] Add the provided Snapcraft build badge to this `README.md`
   - [ ] Publish the snap in the Snap store stable channel
   - [ ] Update the install instructions in this `README.md`
   - [ ] Post an announcement in the [Snapcraft Forum](https://forum.snapcraft.io) - [link]()
