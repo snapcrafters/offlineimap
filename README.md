@@ -1,10 +1,10 @@
 <h1 align="center">
-  <img src="https://avatars1.githubusercontent.com/u/29598503?v=3&s=256" alt="Project">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/OfflineIMAP_logo.png" alt="OfflineIMAP">
   <br />
-  [Project]
+  [OfflineIMAP]
 </h1>
 
-<p align="center"><b>This is the snap for [Project]</b>, <i>"Single-line elevator pitch for your amazing snap"</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
+<p align="center"><b>This is the snap for [OfflineIMAP]</b>, <i>"Read/sync your IMAP mailboxes "</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
 distributions.</p>
 
 <!-- Uncomment and modify this when you are provided a build status badge
@@ -15,8 +15,11 @@ distributions.</p>
 
 ## Install
 
-    sudo apt install snapd-xdg-open
-    sudo snap install my-snap-name
+    sudo snap install offlineimap
+    
+## Configure
+
+The configuration file for offlineimap should be placed in ```$HOME/snap/offlineimap/current/.offlineimaprc```
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
@@ -33,13 +36,13 @@ the [snapcraft.yaml](https://github.com/snapcrafters/fork-and-rename-me/blob/mas
 upstream so [Project] can authoritatively publish future releases.
 
   - [x] Fork the [Snapcrafters template](https://github.com/snapcrafters/fork-and-rename-me) repository to your own GitHub account
-  - [ ] Rename the forked Snapcrafters template repository
-  - [ ] Update logos and references to `[Project]` and `[my-snap-name]`
-  - [ ] Create a snap that runs in `devmode`
-  - [ ] Register the snap in the store, **using the preferred upstream name**
+  - [x] Rename the forked Snapcrafters template repository
+  - [x] Update logos and references to `[Project]` and `[my-snap-name]`
+  - [x] Create a snap that runs in `devmode`
+  - [x] Register the snap in the store, **using the preferred upstream name**
   - [ ] Add a screenshot to this `README.md`
-  - [ ] Publish the `devmode` snap in the Snap store edge channel
-  - [ ] Add install instructions to this `README.md`
+  - [x] Publish the `devmode` snap in the Snap store edge channel
+  - [x] Add install instructions to this `README.md`
   - [ ] Update snap store metadata, icons and screenshots
   - [ ] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
   - [ ] Publish the confined snap in the Snap store beta channel
