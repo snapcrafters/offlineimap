@@ -2,7 +2,8 @@ name: offlineimap
 version: '7.1.5'
 summary: OfflineIMAP
 description: |
-  Read/sync your IMAP mailboxes
+  OfflineIMAP is software that downloads your email mailbox(es) as local 
+  Maildirs. OfflineIMAP will synchronize both sides via IMAP.
 
 grade: stable
 confinement: strict
