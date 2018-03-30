@@ -13,6 +13,8 @@ apps:
     command: bin/offlineimap
     plugs:
       - network
+      - home
+      - removable-media
 
 parts:
   setup:
