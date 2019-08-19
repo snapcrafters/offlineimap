@@ -1,12 +1,11 @@
 name: offlineimap
-version: stable
-version-script: git -C parts/offlineimap/build describe --tags
+base: core18
 summary: OfflineIMAP
 description: |
-  OfflineIMAP is software that downloads your email mailbox(es) as local 
+  OfflineIMAP is software that downloads your email mailbox(es) as local
   Maildirs. OfflineIMAP will synchronize both sides via IMAP.
 
-grade: stable
+adopt-info: offlineimap
 confinement: strict
 
 apps:
@@ -18,22 +17,33 @@ apps:
       - removable-media
 
 parts:
-  setup:
-    plugin: python
-    python-version: python2
-    python-packages: [six]
   offlineimap:
-    after: [setup]
     plugin: python
     python-version: python2
     source: https://github.com/OfflineIMAP/offlineimap.git
-    override-build: |
+    # Cannot specify requirements.txt due to issues installing
+    # gssapi[kerberos], which we satisfy with python-gssapi.
+    # List remaining requirements in python-packages.
+    #requirements:
+    #  - requirements.txt
+    build-packages:
+      - python-gssapi
+    python-packages:
+      - portalocker[cygwin]
+      - rfc6555
+      - six
+    override-pull: |
+      snapcraftctl pull
       last_committed_tag="$(git describe --tags --abbrev=0)"
-      last_released_tag="$(snap info offlineimap | awk '$1 == "beta:" { print $2 }')"
+      # `snap info <name>` does not like when the <name> exists as directory
+      # so a little workaround by changing directory to /tmp
+      last_released_tag="$(cd /tmp; snap info offlineimap | awk '$1 == "beta:" { print $2 }')"
       # If the latest tag from the upstream project has not been released to
       # beta, build that tag instead of master.
       if [ "${last_committed_tag}" != "${last_released_tag}" ]; then
+        echo "checking out ${last_committed_tag}"
         git fetch
         git checkout "${last_committed_tag}"
       fi
-      snapcraftctl build
+      snapcraftctl set-version "${last_committed_tag}"
+      snapcraftctl set-grade "stable"
